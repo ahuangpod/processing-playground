@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "processing-playground"
+version = "0.1.0"
+description = ""
+authors = ["Aiden Huang <ahuang9688@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+py5 = "^0.8.0-alpha.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
