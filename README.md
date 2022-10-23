@@ -5,14 +5,11 @@
 ### Dependencies
 
 - Python 3.9
-- [Java 17](https://www.oracle.com/java/technologies/downloads/#java17)
-- [pre-commit](https://pre-commit.com/)
-- `make init` to install all the dependencies
+- [processing-java](https://github.com/processing/processing/wiki/Command-Line#installing-the-processing-java-command)
 
 ### Usage
 
 - `make run <APP_NAME>` to run the code run `src`
-- Or cd into `src/<APP_NAME>`, and `make run`
 
 
 ### Development

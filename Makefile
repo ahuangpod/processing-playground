@@ -17,9 +17,10 @@ help:  ## print this help.
 .PHONY: help
 
 run:  ## Run skech with name, the sketch folder should be under src.
-	poetry run python src/$(RUN_ARGS)
+	processing-java --sketch=`pwd`/src/$(RUN_ARGS) --run
 .PHONY: run
 
 new:  ## Start a new sketch under src.
 	cp -r src/template src/$(RUN_ARGS)
+	mv src/$(RUN_ARGS)/template.pde src/$(RUN_ARGS)/$(RUN_ARGS).pde
 .PHONY: new
