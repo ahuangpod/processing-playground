@@ -16,6 +16,10 @@ help:  ## print this help.
 	@echo ""
 .PHONY: help
 
+ls:  ## Show sketches under src
+	ls src | grep -v template
+.PHONY: ls
+
 run:  ## Run skech with name, the sketch folder should be under src.
 	processing-java --sketch=`pwd`/src/$(RUN_ARGS) --run
 .PHONY: run
