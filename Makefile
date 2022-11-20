@@ -17,14 +17,14 @@ help:  ## print this help.
 .PHONY: help
 
 ls:  ## Show sketches under src
-	ls src | grep -v template
+	@ls src | grep -v template
 .PHONY: ls
 
 run:  ## Run skech with name, the sketch folder should be under src.
-	processing-java --sketch=`pwd`/src/$(RUN_ARGS) --run
+	@processing-java --sketch=`pwd`/src/$(RUN_ARGS) --run
 .PHONY: run
 
 new:  ## Start a new sketch under src.
-	cp -r src/template src/$(RUN_ARGS)
-	mv src/$(RUN_ARGS)/template.pde src/$(RUN_ARGS)/$(RUN_ARGS).pde
+	@cp -r src/template src/$(RUN_ARGS)
+	@mv src/$(RUN_ARGS)/template.pde src/$(RUN_ARGS)/$(RUN_ARGS).pde
 .PHONY: new
